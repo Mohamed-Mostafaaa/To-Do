@@ -1,5 +1,5 @@
-from TaskManager import app, db
-from TaskManager.models import User,TaskCollaborator,Task,Note
+from To_Do import app, db
+from To_Do.models import User, TaskCollaborator, Task, Note
 
 # Create an application context
 with app.app_context():

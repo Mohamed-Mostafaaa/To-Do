@@ -3,9 +3,8 @@
 from flask import render_template, Blueprint
 from flask_login import  current_user, login_required
 from sqlalchemy import func
-from TaskManager.models import Task,TaskCollaborator
-from TaskManager import db
-
+from To_Do.models import Task, TaskCollaborator
+from To_Do import db
 
 
 main = Blueprint('main', __name__)

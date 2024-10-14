@@ -5,10 +5,15 @@ from flask_mail import Message
 from flask import render_template, url_for, flash, redirect, request, Blueprint
 from flask_login import login_user, current_user, logout_user, login_required
 
-from TaskManager import db, bcrypt, mail
-from TaskManager.users.forms import (ResetPasswordForm, RequestResetForm,
-                               RegistrationUserForm, LoginForm, UpdateAccountForm)
-from TaskManager.models import User
+from To_Do import db, bcrypt, mail
+from To_Do.users.forms import (
+    ResetPasswordForm,
+    RequestResetForm,
+    RegistrationUserForm,
+    LoginForm,
+    UpdateAccountForm,
+)
+from To_Do.models import User
 
 
 users = Blueprint('users', __name__)

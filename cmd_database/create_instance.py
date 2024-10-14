@@ -1,9 +1,9 @@
-from TaskManager import app, db
-from TaskManager.models import User, Post
+from To_Do import app, db
+from To_Do.models import User, Post
 
 
 #
-user_1=User(username='jawad5', email='j5@k.com', password='pass')
+user_1 = User(username="jawad5", email="j5@k.com", password="pass")
 
 # Create an application context
 with app.app_context():
@@ -17,8 +17,7 @@ with app.app_context():
 #         print(user)
 
 
-
-post_1 = Post(title='blog 1', content= 'first post content', user_id = 1)
+post_1 = Post(title="blog 1", content="first post content", user_id=1)
 
 with app.app_context():
     db.session.add(post_1)

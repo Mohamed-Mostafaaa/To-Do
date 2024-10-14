@@ -2,21 +2,29 @@ from datetime import datetime, timedelta
 import random
 from lorem_text import lorem  # You can use this library to generate paragraphs
 
-from TaskManager import app, db, create_database
-from TaskManager.models import User, Task, Note
+from To_Do import app, db, create_database
+from To_Do.models import User, Task, Note
 
 # Sample user IDs (you should replace these with actual user IDs from your User table)
 user_ids = [1, 2]
 
 # Sample titles
 titles = [
-    "Task One", "Task Two", "Task Three", "Task Four", "Task Five",
-    "Task Six", "Task Seven", "Task Eight", "Task Nine", "Task Ten"
+    "Task One",
+    "Task Two",
+    "Task Three",
+    "Task Four",
+    "Task Five",
+    "Task Six",
+    "Task Seven",
+    "Task Eight",
+    "Task Nine",
+    "Task Ten",
 ]
 
 # Sample statuses and priorities
-statuses = ['in progress', 'completed', 'pending']
-priorities = ['low', 'medium', 'high']
+statuses = ["in progress", "completed", "pending"]
+priorities = ["low", "medium", "high"]
 
 # Create the database if it doesn't exist
 create_database()
@@ -34,7 +42,7 @@ with app.app_context():
             priority=random.choice(priorities),
             due_date=datetime.utcnow() + timedelta(days=random.randint(1, 30)),
             created_at=datetime.utcnow() - timedelta(days=random.randint(1, 30)),
-            updated_at=datetime.utcnow()
+            updated_at=datetime.utcnow(),
         )
         db.session.add(task)
         db.session.commit()  # Commit to get task.id for notes
@@ -47,7 +55,7 @@ with app.app_context():
                 task_id=task.id,
                 content=note_content,
                 created_at=datetime.utcnow() - timedelta(days=random.randint(1, 30)),
-                updated_at=datetime.utcnow()
+                updated_at=datetime.utcnow(),
             )
             notes.append(note)
         db.session.add_all(notes)
