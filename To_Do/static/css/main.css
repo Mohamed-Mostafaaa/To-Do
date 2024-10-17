@@ -22,25 +22,25 @@ body {
 
 /* Table Styles */
 .table {
-    width: 100%;
-    margin: 20px 0;
-    border-collapse: collapse;
+    width: 90%;
+    margin: 20px auto;
 }
 
 .table th,
 .table td {
-    border: 1px solid #dddddd;
+    border: 1px solid #ffffff59;
     padding: 4px;
     text-align: left;
 }
 
 .table th {
-    background-color: #254053;
-    color: #ffffff;
+    background-color: #7a132498;
+    color: #c7c7c7;
 }
 
 .table td {
-    background: #ffffffe5;
+    background: #e460769c;
+    color: #c7c7c7;
 }
 
 .table-actions a {
@@ -78,7 +78,7 @@ body {
 }
 
 .site-header .navbar-nav .nav-link:hover {
-    color: #f1f517;
+    color: #ff0037;
 }
 
 .note-content {
