@@ -43,4 +43,4 @@ def dashbord():
 @main.route("/about")
 def about():
     """Route to display the about page."""
-    return render_template('about.html', title='About')
+    return render_template('about.html', title='About', custom_css='about')
