@@ -59,11 +59,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .content-section {
-    background: rgba(255, 255, 255, 0.8);
+    background: #d52862c5;
     padding: 2rem;
     border-radius: 8px;
     margin-top: 20px;
-    color: #120944; /* Maintain white text color */
+    color: #fff; /* Maintain white text color */
 	font-size: 1.5rem;
 }
 
@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Footer Styles */
 footer {
     background-color: rgba(255, 255, 255, 0.8);
-    color: #333;
+    color: #d8d8d8;
 }
 
 footer p {
