@@ -12,9 +12,9 @@
                     <div class="card-body ">
                         <h5 class="card-title ">Task Statistics</h5>
                         <ul class="list-group">
-                            <li class="list-group-item ">Total Tasks: {{ num_tasks }}</li>
+                            <li class="list-group-item " style="color:rgb(0, 0, 0);">Total Tasks: {{ num_tasks }}</li>
                             {% for status, count in num_tasks_by_status.items() %}
-                            <li class="list-group-item">{{ status.capitalize() }}: {{ count }}</li>
+                            <li class="list-group-item" style="color:rgb(0, 0, 0);">{{ status.capitalize() }}: {{ count }}</li>
                             {% endfor %}
                         </ul>
                     </div>
@@ -25,7 +25,7 @@
                     <div class="card-body content-section">
                         <h5 class="card-title">Collaborator Statistics</h5>
                         <ul class="list-group">
-                            <li class="list-group-item">Total Collaborators: {{ num_collaborators }}</li>
+                            <li class="list-group-item" style="color:rgb(0, 0, 0);">Total Collaborators: {{ num_collaborators }}</li>
                         </ul>
                     </div>
                 </div>
