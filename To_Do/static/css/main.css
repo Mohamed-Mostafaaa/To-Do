@@ -9,7 +9,7 @@ body {
     background-image: url('../background.png');
     background-position: center;
     background-size:cover; /* Ensure the background image covers the entire body */
-    background-attachment: fixed; /* Keep the background image fixed while scrolling */
+    background-attachment:scroll;
     position: relative;
     margin-top: 5rem;
     color: #000000;
