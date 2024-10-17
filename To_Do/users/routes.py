@@ -18,8 +18,8 @@ from To_Do.models import User
 
 users = Blueprint('users', __name__)
 
-@users.route("/register", methods=['GET', 'POST'])
-def register():
+@users.route("/sign-up", methods=['GET', 'POST'])
+def sign_up():
     """Route to handle user registration."""
     if current_user.is_authenticated:
         return redirect(url_for('main.home'))
@@ -31,7 +31,7 @@ def register():
         db.session.commit()
         flash('Your account has been created! You are now able to log in', 'success')
         return redirect(url_for('users.login'))
-    return render_template('register.html', title='Register', form=form)
+    return render_template('sign_up.html', title='sign_up', form=form)
 
 @users.route("/login", methods=['GET', 'POST'])
 def login():
