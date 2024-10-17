@@ -56,7 +56,7 @@ body {
 }
 
 .content-section {
-    background: #d52862c5;
+    background: #771122d2;
     padding: 2rem;
     border-radius: 8px;
     margin-top: 20px;
@@ -67,9 +67,9 @@ body {
 .jumbotron {
     padding: 2rem;
     margin-bottom: 2rem;
-    background-color: rgba(255,255,255,0.9); /* Semi-transparent background color */
+    background-color: #771122d2; /* Semi-transparent background color */
     border-radius: 0.3rem;
-    color: #15008b; /* Maintain white text color */
+    color: #f3f3f3;
 }
 
 /* Navigation Bar Styles */
@@ -106,11 +106,13 @@ body {
 }
 
 .feature-item img:hover {
-    transform:scale(1.1) /* Rotate the image on hover */
+    transform:scale(1.4) /* Rotate the image on hover */
 }
-/* .feature-item img:hover {
-    transform:scale(1.1)
-} */
+
+a {
+    color: #f3f3f3;
+    text-decoration: none;
+}
 
 /* Footer Styles */
 footer {
