@@ -106,8 +106,11 @@ body {
 }
 
 .feature-item img:hover {
-    transform: rotate(10deg); /* Rotate the image on hover */
+    transform:scale(1.1) /* Rotate the image on hover */
 }
+/* .feature-item img:hover {
+    transform:scale(1.1)
+} */
 
 /* Footer Styles */
 footer {
