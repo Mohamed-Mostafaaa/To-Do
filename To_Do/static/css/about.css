@@ -2,11 +2,34 @@
     box-sizing: border-box;
 }
 
+body{
+    color: #fff;
+}
+
+h4, h1, h5 {
+    color: #fff;
+}
+
 h4 {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .container1 {
     text-align: left;
     margin: 20px;
+    background-color: #500d18d2;
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 8px 8px 8px #3a0a22;
+}
+
+.team {
+    padding: 10px;
+    font-size: 17px;
+}
+
+.team a {
+    color: #fff;
+    text-decoration: none;
 }
