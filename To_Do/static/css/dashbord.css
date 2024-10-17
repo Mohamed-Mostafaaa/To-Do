@@ -1,0 +1,29 @@
+
+.container1{
+    align-items: center;
+    justify-content: center;
+}
+
+.content-section1{
+    background-color: #5c0e1bd2;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border: none;
+    
+}
+
+.card {
+    background-color: #5c0e1bd2;
+    padding: 30px;
+}
+
+.card2 {
+    height: 283px;
+}
+
+
+
+h2, h5{
+    color: #fff;
+}

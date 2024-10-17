@@ -1,18 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container ">
-    <div class="content-section ">
-    <h2>Welcome to To-Do</h2>
+<div class="container1">
+    <div class="content-section1">
+        <h2>Welcome to To-Do</h2>
     </div>
     <br>
-    <!-- <div class="row"> -->
-        <div class="col-md-6">
-            <div class="card content-section">
-                <div class="card-body ">
-                    <h5 class="card-title ">Task Statistics</h5>
+    <div class="row justify-content-center"> <!-- Add Bootstrap row and center columns -->
+        <div class="col-md-6 mb-3"> <!-- Adjust column width and spacing -->
+            <div class="card content-section1">
+                <div class="card-body">
+                    <h5 class="card-title">Task Statistics</h5>
                     <ul class="list-group">
-                        <li class="list-group-item " style="color:rgb(0, 0, 0);">Total Tasks: {{ num_tasks }}</li>
+                        <li class="list-group-item" style="color:rgb(0, 0, 0);">Total Tasks: {{ num_tasks }}</li>
                         {% for status, count in num_tasks_by_status.items() %}
                         <li class="list-group-item" style="color:rgb(0, 0, 0);">{{ status.capitalize() }}: {{ count }}</li>
                         {% endfor %}
@@ -21,17 +21,17 @@
             </div>
         </div>
 
-        <div class="col-md-6">
-            <div class="card content-section">
-                <div class="card-body content-section">
+        <div class="col-md-6 mb-3"> <!-- Adjust column width and spacing -->
+            <div class="card2 content-section1">
+                <div class="card-body">
                     <h5 class="card-title">Collaborator Statistics</h5>
                     <ul class="list-group">
                         <li class="list-group-item" style="color:rgb(0, 0, 0);">Total Collaborators: {{ num_collaborators }}</li>
                     </ul>
                 </div>
             </div>
-        <!-- </div> -->
-        
+        </div>
     </div>
 </div>
+
 {% endblock content %}
