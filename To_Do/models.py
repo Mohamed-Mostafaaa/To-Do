@@ -1,11 +1,10 @@
-""" Models """
-
 from datetime import datetime
 from flask_login import UserMixin
 from flask import current_app
 from itsdangerous.url_safe import URLSafeTimedSerializer as Serializer
 from To_Do import db, login_manager
 
+""" Models """
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -37,20 +36,6 @@ class User(db.Model, UserMixin):
         except Exception:
             return None
         return User.query.get(user_id)
-
-    # def get_reset(self):
-    #     serial =  Serializer(current_app.config['SECRET_KEY'])
-    #     return serial.dumps({'user_id': self.id}).decode('utf-8')
-
-    # @staticmethod
-    # def verify_token(token, expiration=1800):
-    #     serial = Serializer(current_app.config['SECRET_KEY'], expiration)
-    #     try:
-    #         user_id = serial.loads(token)['user_id']
-    #     except :
-    #         return None
-
-    #     return User.query.get(user_id)
 
     def __repr__(self):
         return f"User('{self.username}', '{self.email}')"

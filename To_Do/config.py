@@ -1,5 +1,5 @@
-""" all configuration parameters """
 import os
+""" all configuration parameters """
 
 
 class Config:

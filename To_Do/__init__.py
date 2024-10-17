@@ -1,5 +1,3 @@
-""" init file """
-
 import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
@@ -8,6 +6,7 @@ from flask_login import LoginManager
 from flask_mail import Mail
 from To_Do.config import Config
 
+""" init file """
 
 # Set up the mysql database path and URI
 # app.config['SQLALCHEMY_DATABASE_URI'] ='mysql://sqluser:password@localhost/taskflow_db'

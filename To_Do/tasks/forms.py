@@ -6,9 +6,6 @@ from wtforms.validators import DataRequired, Length
 
 
 
-
-
-
 class CreateTaskForm(FlaskForm):
     """Form to create """
     title = StringField('Title', validators=[DataRequired(), Length(min=1, max=255)])
@@ -45,10 +42,6 @@ class NoteFormUpdate(FlaskForm):
     """Form to create or update a note"""
     content = TextAreaField('Content', validators=[DataRequired()])
     submit = SubmitField('Update Note')
-
-
-
-
 
 class TaskCollaboratorForm(FlaskForm):
     """Form to add a collaborator to a task"""
