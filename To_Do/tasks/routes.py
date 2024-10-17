@@ -15,6 +15,7 @@ from To_Do.tasks.forms import (
 from To_Do.models import User, Task, Note, TaskCollaborator
 
 
+
 tasks = Blueprint("tasks", __name__)
 
 
