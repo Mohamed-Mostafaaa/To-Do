@@ -15,10 +15,6 @@ body {
     color: #000000;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #000000;
-}
-
 .bg-steel {
     background-color: #2c0305a1;
     color: #000000;
@@ -63,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2rem;
     border-radius: 8px;
     margin-top: 20px;
-    color: #fff; /* Maintain white text color */
+    color: #fff;
 	font-size: 1.5rem;
 }
 

@@ -1,5 +1,3 @@
-""" main routes"""
-
 from flask import render_template, Blueprint
 from flask_login import  current_user, login_required
 from sqlalchemy import func
@@ -38,7 +36,7 @@ def dashbord():
 
     return render_template('dashbord.html', title='Dashbord', num_tasks=num_tasks,
                            num_tasks_by_status=num_tasks_by_status,
-                           num_collaborators=num_collaborators)
+                           num_collaborators=num_collaborators, custom_css="dashbord")
 
 @main.route("/about")
 def about():
