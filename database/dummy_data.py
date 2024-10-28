@@ -3,7 +3,7 @@ import random
 from lorem_text import lorem  # You can use this library to generate paragraphs
 
 from To_Do import app, db, create_database
-from To_Do.models import User, Task, Note
+from To_Do.models import Task, Note
 
 # Sample user IDs (you should replace these with actual user IDs from your User table)
 user_ids = [1, 2]

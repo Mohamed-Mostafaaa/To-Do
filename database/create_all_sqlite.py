@@ -1,7 +1,7 @@
 """ create the database """
 import sys
 import os
-from sqlalchemy import create_engine, text
+from sqlalchemy import create_engine
 
 # Check if the action and database name are provided as arguments
 if len(sys.argv) != 3:
