@@ -4,6 +4,8 @@
 
 To_Do is a comprehensive task management application designed to streamline task assignments and team members' collaboration. It allows users to create tasks, assign collaborators, and add notes to tasks efficiently.
 
+![](./To_Do/static/wepsite.png)
+
 ## Features ✨
 
 - **User Authentication:** Secure login and registration using Flask-Login.
@@ -88,7 +90,7 @@ This project is licensed under the ALX License.
 
 Feel free to reach out to us if you have any questions or feedback.
 
-- Mohamed Mostafa Abdelhamed 
-	[LinkedIn](https://www.linkedin.com/in/mohamed-mostafaaa/) | [GitHub](https://github.com/Mohamed-Mostafaaa) 
+- Mohamed Mostafa Abdelhamed
+  [LinkedIn](https://www.linkedin.com/in/mohamed-mostafaaa/) | [GitHub](https://github.com/Mohamed-Mostafaaa)
 - Farouk Ashraf Elshamy
-	[LinkedIn](https://www.linkedin.com/in/faroukashraf//) | [GitHub](https://github.com/FaroukAshrafElshamy)
+  [LinkedIn](https://www.linkedin.com/in/faroukashraf//) | [GitHub](https://github.com/FaroukAshrafElshamy)
